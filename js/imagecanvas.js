@@ -1,6 +1,7 @@
 /**
  *  All script related to the image canvas object
- *  Although structured like a proper class, for time saving,
+ *  
+ *  Although the templating is for a proper class, for time saving,
  *  this will run like a simple script, rather than using proper
  *  class structure. Just for this task!
  *  
@@ -102,8 +103,6 @@ function ImageCanvas(){
 		
 		return newBox;
 	}
-	
-	var someBox = self.makeHoverBox(1160, 50);
 	
 	self.hoverBoxes.set("hoverBox1", self.makeHoverBox(1160, 50));
 	self.hoverBoxes.set("hoverBox2", self.makeHoverBox(600, 1210));

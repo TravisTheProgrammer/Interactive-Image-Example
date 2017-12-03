@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Example Interactive Image</title>
+
+        <!-- CDNs -->
+        <!-- NOTE: Scripts are pulled from CDNs for portability. This is a web app, so I assume no inline scripting is needed
+        for offline compatibility -->
+        <script src='https://code.jquery.com/jquery-3.2.1.min.js'></script>
+        <script src='https://code.jquery.com/ui/1.12.1/jquery-ui.min.js'></script>
+        <link rel='stylesheet' href='https://code.jquery.com/ui/1.11.4/themes/ui-darkness/jquery-ui.css'>
+		
+		<script src='https://cdnjs.cloudflare.com/ajax/libs/fabric.js/1.7.17/fabric.min.js'></script>
+		
+        <!-- Load local libraries here -->
+        <script src='js/imagecanvas.js'></script>
+        
+		<script src='js/App.js'></script>
+        
+        <!-- Local styles -->
+		<link rel='stylesheet' href='css/media.css'>
+        <link rel='stylesheet' href='css/style.css'>
+
+   </head>
+   
+   <body>
+   		
+   		<!-- NOTE: I've put the app in a wrapper to position it within the web page. The "app-area" div could be embedded into any page
+   		with the specified dimensions, as long as the html head scripts etc were included -->
+   		<div id='app-frame'>
+   		
+            <div id='header' class='header container'>
+				<div class='center-text middle'>Pan the image by holding right mouse button. Zoom the image by using mouse wheel.</div>
+            </div>
+    
+            <div id='wrapper' class='main container'>
+            
+             <div id='app-area' class='content'>
+                <canvas id='image-canvas'></canvas>
+             </div>
+            
+			</div>
+			
+			 <div id='footer' class='footer container'>
+				<div class='center-text middle'>Copyright 2017 Travis Nicholson</div>
+             </div>
+
+		</div>
+       
+    </body>
+</html>
